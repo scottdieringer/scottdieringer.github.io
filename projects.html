@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">  
+</head>
+<body>
+    
+     <!-- project_overlay will cover the entire screen when one of the projects are clicked on.-->
+    <div id = "project_overlay" class = "hidden"></div>
+     
+    <div id="project_nav">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="education_work.html" target="_blank">Education and Work History</a>
+        <a href="projects.html" target="_blank">Projects</a>
+    </div>
+
+
+    <div id = "project_names">
+        <p>
+        Click on project to see details.    
+        </p>
+         <div id = "database_locking_name">Database Locking</div>
+         <div id = "traveling_salesman_name">Modified Travleing Salesman</div>
+         <div id = "Mandelbrot_set_name">Mandelbrot Set</div>
+         <div id = "find_closest_point_name">K2 Tree</div>
+    </div>
+    
+        
+    <div class="hidden" id="database_locking">
+        <div id="database_locking_title">
+            <p>Database Locking</p>
+        </div>
+        <div id="database_locking_description">
+            <p>
+            Given a bare bones implementation of a database, implement concurrency management using 
+             six types of locks. There were three different tables indicating whether the locks were
+            compatible, substitutable, or whether one lock could be a parent lock of another. 
+            My implementation had to manage the acquiring, releasing, and waiting for locks held on
+            databases, tables, and rows in the tables by different transactions running concurrently.
+            Written in Java.
+            </p>
+            <a href="https://github.com/scottdieringer/CS186Project4/tree/master/src/main/java/edu/berkeley/cs186/database/concurrency">See Project on Github</a>
+        </div>        	
+    </div>
+
+    <div class="hidden" id = "traveling_salesman">
+        <div id="traveling_salesman_title">
+            <p>Modified Traveling Saleman</p>
+        </div>
+        <div id = "traveling_salesman_description">
+            <p>
+            Given a car that can hold a group of people and a list of locations, some of which are homes,
+            find a route that starts and stops from a particular location and manages to get people to their
+            house. You can either drop them off at their house or drop them off at a nearby location and have
+            them walk home. When the person you are trying to get home is in the car the energy used is 2/3 
+            units of energy and when they walk they use 1 unit of energy. Find the route that minimizes the 
+            amount of energy used. The solution used the Christofides algorithm to find a route assuming the 
+            homes were drop off locations and then eliminating paths that repeated themselves in order to 
+            increase efficiency. Written in Python using the NetworkX graph library.  
+            </p>
+            <a href="https://github.com/scottdieringer/TravelingSalesman/tree/master/project-fa19-master">See Project on Github</a>	        	
+        </div>
+    </div>
+            
+    <div class="hidden" id="Mandelbrot_set">
+        <div id="Mandelbrot_set_title">
+            <p>Mandlbrot Set</p>
+        </div>
+        <div id = "Mandelbrot_set_description">
+            <p>
+            Given a 2D grid, a starting point, a threshold and a certain number of iterations, find out 
+            whether each point in the grid exceeds the threshold before a given number of iterations is 
+            reached and then use that information to color a map which can be used to create a fractal, 
+            i.e. an image that is the same when looked at closely as when it is looked at zoomed out. 
+            The set was created using cellular automata and written in C. 
+            </p>
+            <a href="https://github.com/scottdieringer/Mandelbrot">See Project on Github</a>
+        </div>
+    </div>
+
+    <div class="hidden" id ="find_closest_point">
+        <div id="find_closest_point_title">
+            <p>K2 Tree</p>
+        </div>
+        <div id="find_closest_point_description">
+            <p>
+            Given a list of 2D points and another 2D point not in the list, find the point in the list which is
+            closest to the given point in logarithmic time. The solution organized the points into a k2 
+            structure and used several mutually recursive functions to find the closest point. Written in Java.    
+            </p>
+            <a href="https://github.com/scottdieringer/K2Tree/tree/master/proj2ab/bearmaps/">See Project on Github</a>
+        </div>
+    </div>
+    <div class = "Contact_info">
+        <p>
+        scott_dieringer@berkeley.edu    
+        </p>
+    </div>
+<script type="text/javascript" src="assets/scripts/projects.js"></script>    
+</body>
+</html>
